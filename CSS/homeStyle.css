@@ -1,0 +1,81 @@
+.head {
+  background-color: #B99B79;
+}
+
+.body {
+  background-color: #B99B79;
+}
+
+.footer {
+  background-color: #B99B79;
+}
+
+/*---------------------------------DropDown buttons--------------------------------------*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 1px 16px 8px 1px rgba(0, 0, 0, 0.2);
+  padding: 5px 5px;
+  z-index: 1;
+}
+
+.dropdown:hover {
+  color: yellow;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.bord {
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid;
+  border-color: black;
+}
+
+/*---------------------------------DropDown buttons--------------------------------------*/
+/*---------------------------------IG/FB buttons style------------------------------------*/
+.tranbutton {
+  display: inline;
+  border: 0;
+  background: transparent;
+  padding-right: 2px;
+}
+
+/*---------------------------------IG/FB buttons style------------------------------------*/
+/*---------------------------------UNSELECTABLE TEXT------------------------------*/
+.unselect {
+  user-select: none;
+}
+
+/*---------------------------------UNSELECTABLE TEXT------------------------------*/
+/*---------------------------------NAVIGATION BAR FIXED------------------------------*/
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: none;
+}
+
+/*---------------------------------NAVIGATION BAR FIXED------------------------------*/
+/*
+#FFCB5C
+#B99B79
+#FFBE33
+#003D32
+#006653
+#1C00ff00 - TRANSPARENT
+*/
