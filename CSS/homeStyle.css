@@ -14,45 +14,69 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  color: #003D32;
+  align-items: center;
+  font-size: 35px;
+  padding-left: 50px;
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: white;
   min-width: 160px;
   box-shadow: 1px 16px 8px 1px rgba(0, 0, 0, 0.2);
-  padding: 5px 5px;
   z-index: 1;
 }
 
 .dropdown:hover {
-  color: yellow;
+  color: #FFCB5C;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-  color: black;
+  color: #003D32;
 }
 
 a:hover {
-  color: black;
+  color: #FFCB5C;
+}
+
+a:link {
+  text-decoration: none;
+  color: #006653;
+  z-index: 1;
+  position: relative;
 }
 
 .bord {
   margin: 10px 0;
   padding: 5px;
-  border: 1px solid;
+  border: none;
   border-color: black;
+}
+
+table {
+  table-layout: auto;
+}
+
+th, td {
+  vertical-align: bottom;
+  overflow: hidden;
+}
+
+.Top {
+  vertical-align: top;
 }
 
 /*---------------------------------DropDown buttons--------------------------------------*/
 /*---------------------------------IG/FB buttons style------------------------------------*/
 .tranbutton {
-  display: inline;
-  border: 0;
+  border: none;
   background: transparent;
-  padding-right: 2px;
+  float: right;
+  padding-right: 5px;
+  vertical-align: top;
 }
 
 /*---------------------------------IG/FB buttons style------------------------------------*/
@@ -66,12 +90,19 @@ a:hover {
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   border: none;
 }
 
 /*---------------------------------NAVIGATION BAR FIXED------------------------------*/
+.navbarcolor {
+  background-color: #FFCB5C;
+}
+
 /*
+
 #FFCB5C
 #B99B79
 #FFBE33
