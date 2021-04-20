@@ -24,13 +24,14 @@
   display: none;
   position: fixed;
   background-color: white;
-  min-width: 160px;
+  min-width: 175px;
   box-shadow: 1px 16px 8px 1px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  text-align: center;
 }
 
 .dropdown:hover {
-  color: #FFCB5C;
+  color: #006653;
 }
 
 .dropdown:hover .dropdown-content {
@@ -39,7 +40,7 @@
 }
 
 a:hover {
-  color: #FFCB5C;
+  color: #006653;
 }
 
 a:link {
