@@ -1,12 +1,12 @@
-.head {
+.header {
+  background: #FFCB5C;
+}
+
+body {
   background-color: #B99B79;
 }
 
-.body {
-  background-color: #B99B79;
-}
-
-.footer {
+footer {
   background-color: #B99B79;
 }
 
@@ -24,7 +24,7 @@
   display: none;
   position: fixed;
   background-color: white;
-  min-width: 175px;
+  min-width: 15%;
   box-shadow: 1px 16px 8px 1px rgba(0, 0, 0, 0.2);
   z-index: 1;
   text-align: center;
@@ -46,7 +46,6 @@ a:hover {
 a:link {
   text-decoration: none;
   color: #006653;
-  z-index: 1;
   position: relative;
 }
 
@@ -59,14 +58,24 @@ a:link {
 
 table {
   table-layout: auto;
+  text-align: center;
+  min-height: 150px;
 }
 
 th, td {
-  vertical-align: bottom;
   overflow: hidden;
+  text-align: center;
 }
 
-.Top {
+.bottom {
+  vertical-align: bottom;
+}
+
+.center {
+  vertical-align: middle;
+}
+
+.top {
   vertical-align: top;
 }
 
@@ -95,13 +104,11 @@ th, td {
   right: 0;
   width: 100%;
   border: none;
+  background-color: #FFCB5C;
+  z-index: 1;
 }
 
 /*---------------------------------NAVIGATION BAR FIXED------------------------------*/
-.navbarcolor {
-  background-color: #FFCB5C;
-}
-
 /*
 
 #FFCB5C
