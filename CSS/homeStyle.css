@@ -2,6 +2,7 @@
   background: #FFCB5C;
 }
 
+
 body {
   background-color: #B99B79;
 }
@@ -104,7 +105,7 @@ th, td {
   right: 0;
   width: 100%;
   border: none;
-  background-color: #FFCB5C;
+  background-color: transparent;
   z-index: 1;
 }
 
