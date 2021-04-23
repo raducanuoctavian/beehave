@@ -1,137 +1,147 @@
-<!DOCTYPE html>
-<html>
-<!--CSS import-->
-<link rel="stylesheet" href="css/homeStyle.css">
-<!-- Top section of the page-->
+<!doctype html>
+<html lang="en">
 
 <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/homeStyle.css">
   <link rel="shortcut icon" href="logo/favicon.ico" />
   <title>BeeHave </title>
-  <!----------------------------------------------------------Logo----------------------------------------------->
-  <div style="position: fixed;z-index:2;top:0 padding=top:25px">
-    <a href='index.html'><img src="logo/bee1.png" alt="Logo BeeHave" width="155" height="155"></a>
-  </div>
-  <!----------------------------------------------------------Logo----------------------------------------------->
-  <table class="navbar" id="heading">
-    <!------------------------------TEST DROP-DOWN-Buttons----------------------->
-    <tr>
-      <td class="bottom">
-        <div class="dropdown">
-          <div class="bord unselect">Despre noi </div>
-          <p>
-          <div class="dropdown-content">
-            <a href="pagini/echipa.html">Echipa</a></p>
-            <p><a href="pagini/org.html">Organizatie</a></p>
-            <p>Ceapa</p>
-          </div>
-        </div>
 
-        <a href="https://www.google.ro">
-          <div class="dropdown">
-            <div class="bord">Proiecte</div>
-          </div>
-        </a>
-        </div>
+  <!-- NavBar-->
+  <nav id="navbar_top" class="navbar navbar-expand-lg fixed-top navbar-dark" style="background-color:#B99B79" role="navigation">
 
-        <div class="dropdown">
-          <div class="bord unselect">Implica-te</div>
-          <p>
-          <div class="dropdown-content">
-            <a href="pagini/echipa.html">Echipa</a></p>
-            <p><a href="pagini/org.html">Organizatie</a></p>
-            <p>Ceapa</p>
-          </div>
-        </div>
 
-        <a href="https://www.google.ro">
-          <div class="dropdown">
-            <div class="bord">Blog </div>
-          </div>
-        </a>
-      </td>
-      <!------------------------------TEST DROP-DOWN-Buttons----------------------->
-      <!--------------------------------------------------------IG/FB BUTTONS------------------------------->
-      <td class="top">
-        <button class="tranbutton"><a href="https://www.facebook.com/beehave.romania" target="_blank">
-            <img src='logo/fb.png' alt='facebook' width="17" height="34" /></a></button>
-        <button class="tranbutton"><a href="https://www.instagram.com/beehave_romania/" target="_blank">
-            <img src='logo/ig.png' alt='instagram' width="34" height="34" /></a></button>
-      </td>
-      <!--------------------------------------------------------IG/FB BUTTONS------------------------------->
-    </tr>
-  </table>
+    <div class="nav-item fixed-top" style="z-index:-1;top:10; padding=top:25px">
+      <a href='index.html'><img src="logo/bee1.png" alt="Logo BeeHave" width="155" height="155"></a>
+    </div>
+    <div class="container">
+<table class="navbar">
+  <tr>
+    <td>
+      <div class="nav-item">
+        <button class="tranbutton"><a href="https://www.facebook.com/beehave.romania" target="_blank"><img src='logo/fb.png' alt='facebook' width="17" height="34" /></a></button>
 
+      </div>
+
+
+
+      <div class="nav-item">
+        <button class="tranbutton"><a href="https://www.instagram.com/beehave_romania/" target="_blank"><img src='logo/ig.png' alt='instagram' width="34" height="34" /></a></button>
+
+      </div>
+    </td>
+  </tr>
+
+<tr>
+
+  <td >
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+              <span class="navbar-toggler-icon" src="#"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="main_nav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" style="color:#003D32">Acasa</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#003D32">
+                    Despre noi
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="pagini/despre.html">ASdfsafasf</a></li>
+                    <li><a class="dropdown-item" href="pagini/despre.html">dasdasdasdasdasd</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="pagini/proiecte.html" style="color:#003D32">Proiecte</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:#003D32">
+                    Implica-te
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="pagini/echipa.html">Echipa</a></li>
+                    <li><a class="dropdown-item" href="pagini/org.html">Organizatie</a></li>
+                    <li><a class="dropdown-item" href="#">smth else</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="pagini/blog.html" style="color:#003D32">Blog</a>
+                </li>
+              </ul>
+            </div>
+
+          </td>
+        </tr>
+          </table>
+
+    </div>
+  </nav>
 
 </head>
 
+
 <body>
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+  <br /><br /><br><br><br><br>
+  <h1>qkwheioqwehjoqwie</h1>
+  <h1>qkwheioqwehjoqwie</h1>
+  <h1>qkwheioqwehjoqwie</h1>
+  <h1>qkwheioqwehjoqwie</h1>
+  <h1>qkwheioqwehjoqwie</h1>
+  <h1>qkwheioqwehjoqwie</h1>
+  <h1>qkwheioqwehjoqwie</h1>
+
+  <h1>qkwheioqwehjoqwie</h1>
+
+  <h1>qkwheioqwehjoqwie</h1>
+
+  <h1>qkwheioqwehjoqwie</h1>
+
+  <h1>qkwheioqwehjoqwie</h1>
+
+  <h1>qkwheioqwehjoqwie</h1>
+
+  <h1>qkwheioqwehjoqwie</h1>
+
+  <h1>qkwheioqwehjoqwie</h1>
+
+  <h1>qkwheioqwehjoqwie</h1>
+
+  <h1>qkwheioqwehjoqwie</h1>
+
+  <h1>qkwheioqwehjoqwie</h1>
+
+  <h1>qkwheioqwehjoqwie</h1>
+
+  <h1>qkwheioqwehjoqwie</h1>
+
+  <h1>qkwheioqwehjoqwie</h1>
+
+  <h1>qkwheioqwehjoqwie</h1>
+
+  <h1>qkwheioqwehjoqwie</h1>
+
+  <h1>qkwheioqwehjoqwie</h1>
 
 
-  <p class="bottom">qwehjqwfgeikn biuqwbenikqwuehb<p>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
-
-
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-
-
-
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-
-
-
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-  <h1>qwehjqwfgeikn biuqwbenikqwuehb</h1>
-
-
-
-
-
-
-
-
-
-
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>

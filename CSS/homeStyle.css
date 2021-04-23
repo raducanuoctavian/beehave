@@ -1,72 +1,8 @@
-.header {
-  background: #FFCB5C;
-}
-
 
 body {
-  background-color: #B99B79;
+  background-color: #006653;
 }
 
-footer {
-  background-color: #B99B79;
-}
-
-/*---------------------------------DropDown buttons--------------------------------------*/
-.dropdown {
-  position: relative;
-  display: inline-block;
-  color: #003D32;
-  align-items: center;
-  font-size: 35px;
-  padding-left: 50px;
-}
-
-.dropdown-content {
-  display: none;
-  position: fixed;
-  background-color: white;
-  min-width: 15%;
-  box-shadow: 1px 16px 8px 1px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  text-align: center;
-}
-
-.dropdown:hover {
-  color: #006653;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  color: #003D32;
-}
-
-a:hover {
-  color: #006653;
-}
-
-a:link {
-  text-decoration: none;
-  color: #006653;
-  position: relative;
-}
-
-.bord {
-  margin: 10px 0;
-  padding: 5px;
-  border: none;
-  border-color: black;
-}
-
-table {
-  table-layout: auto;
-  text-align: center;
-  min-height: 150px;
-}
-
-th, td {
-  overflow: hidden;
-  text-align: center;
-}
 
 .bottom {
   vertical-align: bottom;
@@ -78,10 +14,11 @@ th, td {
 
 .top {
   vertical-align: top;
+  background-color: #B99B79;
+  position:fixed;
+  top:0;
 }
 
-/*---------------------------------DropDown buttons--------------------------------------*/
-/*---------------------------------IG/FB buttons style------------------------------------*/
 .tranbutton {
   border: none;
   background: transparent;
@@ -90,26 +27,24 @@ th, td {
   vertical-align: top;
 }
 
-/*---------------------------------IG/FB buttons style------------------------------------*/
-/*---------------------------------UNSELECTABLE TEXT------------------------------*/
-.unselect {
-  user-select: none;
+
+.nav-item:hover .dropdown-menu{
+  display: block;
 }
 
-/*---------------------------------UNSELECTABLE TEXT------------------------------*/
-/*---------------------------------NAVIGATION BAR FIXED------------------------------*/
-.navbar {
+h1{
+  color:blue;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
   position: fixed;
+  left:500px;
   top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  border: none;
-  background-color: transparent;
-  z-index: 1;
 }
 
-/*---------------------------------NAVIGATION BAR FIXED------------------------------*/
 /*
 
 #FFCB5C
