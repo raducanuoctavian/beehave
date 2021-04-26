@@ -1,6 +1,8 @@
 
 body {
   background-color: #006653;
+  padding-top:200px;
+
 }
 
 
@@ -46,6 +48,17 @@ h1{
 table{
   margin-right: auto;
   margin-left: auto;
+}
+
+.borderarticles{
+  border:dotted grey 12px;
+  border-bottom:none;
+  width:4%;
+  margin:100px auto;
+
+
+
+
 }
 
 /*
