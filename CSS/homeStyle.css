@@ -55,10 +55,13 @@ table{
   border-bottom:none;
   width:4%;
   margin:100px auto;
+}
 
-
-
-
+.imgteam{
+  border-radius:50%;
+  width:250;
+  height:250;
+  margin-left: 10%;
 }
 
 /*
