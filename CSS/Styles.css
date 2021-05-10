@@ -64,8 +64,30 @@ table{
   margin-left: 10%;
 }
 
+/* NavBar style */
 
+.on_top{
+  z-index:-2;
+}
+.nav_style{
+  width:100%;
+  font-weight:bold;
+  font-size:24px;
+  margin-top:50px
+}
+.nav_text_color{
+  color:white;
+  font-family: 'Roboto', sans-serif;
+}
+.top_buttons{
+  margin-bottom:125px;
+}
+.navbar_style{
+  background-color:transparent;
+  height:175px;
+}
 
+/*  */
 
 
 
