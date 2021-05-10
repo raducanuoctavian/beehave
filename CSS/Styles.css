@@ -4,8 +4,6 @@ body {
   padding-top:200px;
 
 }
-
-
 .bottom {
   vertical-align: bottom;
 }
@@ -57,12 +55,6 @@ table{
   margin:100px auto;
 }
 
-.imgteam{
-  border-radius:50%;
-  width:250;
-  height:250;
-  margin-left: 10%;
-}
 
 /* NavBar style */
 
@@ -87,14 +79,104 @@ table{
   height:175px;
 }
 
-/*  */
+/*------------------------------------------------------ index.html body -------------------------------------------------*/
+
+/*Blog section*/
+.blog_section{
+margin-left:5%;
+margin-right:5%;
+}
+.h1_style{
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  font-weight:bold;
+}
+
+/*countdown section */
+.width_100{
+  width:100%;
+}
+.text_style{
+  color:white;
+  font-family: 'Roboto', sans-serif;
+}
+.countdown_style{
+  border: none;
+  height:300px;
+  width:100%;
+  padding:80px;
+}
+/*Misiune, Viziune, Valori section */
+.p_style{
+  width:33%;
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  font-weight:bold;
+}
+
+.p_content_style{
+  font-size:20px;
+  font-style:italic;
+}
+
+/*Footer section */
+.list_group_style{
+  background-color:darkgrey;
+  border:2px solid grey;
+  width:50%;
+  margin-left:7%;
+  margin-bottom:5%;
+}
+.list_group_item_style{
+  background-color:darkgrey;
+}
+.td_alignment{
+  vertical-align:top;
+}
+.h4_style{
+  margin-left:20%;
+}
+.form_style{
+  width:50%;
+  margin-right:7%;
+  margin-bottom:5%;
+  margin-left:20%;
+
+}
+
+/*------------------------------------------------------ echipa.html body -------------------------------------------------*/
+/*EchipaBEE section */
+.container_fluid_style{
+  margin-top:30px;
+}
+.h3_style{
+  margin-left:15px;
+}
+.text_center{
+  text-align:center;
+}
+.h5_style{
+  font-style:italic; color:black; font-size:14px;
+}
+.imgteam{
+  border-radius:50%;
+  width:250;
+  height:250;
+  margin-left: 10%;
+  margin-top:10px;
+  border:2px solid white;
+}
+/*Footer section */
+
+
+
+
 
 
 
 
 
 /*
-
 #FFCB5C
 #B99B79
 #FFBE33
