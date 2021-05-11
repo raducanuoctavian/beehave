@@ -1,6 +1,6 @@
 
 body {
-  background-color: darkgrey;
+  background: #939b62;
   padding-top:200px;
 
 }
@@ -12,12 +12,7 @@ body {
   vertical-align: middle;
 }
 
-.top {
-  vertical-align: top;
-  background-color: #B99B79;
-  position:fixed;
-  top:0;
-}
+
 td img{
     display: block;
     margin-left: auto;
@@ -37,11 +32,15 @@ td img{
 
 .nav-item:hover .dropdown-menu{
   display: block;
+
+}
+.nav-link:hover{
+  color:#939b62;
+}
+.dropdown-item:hover{
+  color:#939b62;
 }
 
-h1{
-  color:blue;
-}
 
 table{
   margin-right: auto;
@@ -49,7 +48,7 @@ table{
 }
 
 .borderarticles{
-  border:dotted grey 12px;
+  border:dotted black 12px;
   border-bottom:none;
   width:4%;
   margin:100px auto;
@@ -75,8 +74,10 @@ table{
   margin-bottom:125px;
 }
 .navbar_style{
-  background-color:transparent;
-  height:175px;
+  background:black;
+  height:200px;
+  transition: background 0.5s;
+  border-bottom: 1px solid black;
 }
 
 /*------------------------------------------------------ index.html body -------------------------------------------------*/
@@ -177,10 +178,9 @@ margin-right:5%;
 
 
 /*
-#FFCB5C
-#B99B79
-#FFBE33
-#003D32
-#006653
+#FF7B54
+#ffb26b
+#ffd56b
+#939b62
 #1C00ff00 - TRANSPARENT
 */
