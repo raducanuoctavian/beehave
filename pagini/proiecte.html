@@ -13,9 +13,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="../logo/favicon.ico" />
   <title>BeeHave </title>
+</head>
 
+<body>
   <!-- NavBar-->
-  <div class="navbar navbar-expand-lg fixed-top navbar_style">
+  <section class="navbar navbar-expand-lg fixed-top navbar_style" id="navigation">
 
     <div class="container">
       <a class="fixed-top on_top"><a href="../index.html"><img src="../logo/bee1.png" alt="Logo BeeHave" width="200" height="200" style="margin-top:0px" /></a></a>
@@ -60,11 +62,10 @@
       </li>
 
     </ul>
-  </div>
+  </section>
 
-</head>
 
-<body>
+
   <!-- Lista -->
   <div class="section" id="Lista-Podcasturi">
     <div class="container-fluid" style="margin-left:5%; margin-top:5%">
@@ -89,13 +90,93 @@
           </a>
         </div>
         <div class="col-sm">
-          <p class="h1">
-            Calendar To be Added JS required
-          </p>
+
         </div>
       </div>
     </div>
   </div>
+
+
+  <!--Calendar -->
+  <div id="Calendar" class="section">
+    <div class="container col-sm-4 col-md-7 col-lg-4 mt-5">
+      <div class="card">
+        <h3 class="card-header" id="monthAndYear"></h3>
+        <table class="table table-bordered table-responsive-sm" id="calendar">
+          <thead>
+            <tr>
+              <th class="text_center">Du</th>
+              <th class="text_center">Lu</th>
+              <th class="text_center">Ma</th>
+              <th class="text_center">Mi</th>
+              <th class="text_center">Jo</th>
+              <th class="text_center">Vi</th>
+              <th class="text_center">Sa</th>
+            </tr>
+          </thead>
+
+          <tbody id="calendar-body" class="text_center">
+
+          </tbody>
+        </table>
+
+        <div class="form-inline">
+          <div class="row" style="margin-left:15%; margin-right:15%">
+
+            <div class="col">
+              <button class="btn btn-outline-primary" id="previous" onclick="previous()">Luna Anterioara</button>
+            </div>
+            <div class="col">
+              <button class="btn btn-outline-primary" id="next" onclick="next()">Luna urmatoare</button>
+            </div>
+          </div>
+
+
+
+        </div>
+        <br />
+        <form class="form-inline">
+          <label class="lead mr-2 ml-2" for="month">Mergi la luna: </label>
+          <select class="form-control col-sm-4" name="month" id="month" onchange="jump()">
+            <option value=0>Ianuarie</option>
+            <option value=1>Februarie</option>
+            <option value=2>Martie</option>
+            <option value=3>Aprilie</option>
+            <option value=4>Mai</option>
+            <option value=5>Iunie</option>
+            <option value=6>Iulie</option>
+            <option value=7>August</option>
+            <option value=8>Septembrie</option>
+            <option value=9>Octombrie</option>
+            <option value=10>Noiembrie</option>
+            <option value=11>Decembrie</option>
+          </select>
+
+          <label class="lead mr-2 ml-2" for="year">In anul: </label>
+          <label for="year"> </label><select class="form-control col-sm-4" name="year" id="year" onchange="jump()">
+            <option value=2021>2021</option>
+            <option value=2022>2022</option>
+            <option value=2023>2023</option>
+            <option value=2024>2024</option>
+            <option value=2025>2025</option>
+            <option value=2026>2026</option>
+            <option value=2027>2027</option>
+            <option value=2028>2028</option>
+            <option value=2029>2029</option>
+            <option value=2030>2030</option>
+          </select>
+        </form>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+
 
   <!-- Footer-->
   <section id="Footer" class="footer">
@@ -149,14 +230,20 @@
             </p>
             <button type="submit" class="btn btn-primary">Send</button>
           </form>
-
         </td>
       </tr>
     </table>
-
   </section>
 
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="../JS/navbar.js"></script>
+  <script src="../JS/Calendar.js"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 
 </html>
