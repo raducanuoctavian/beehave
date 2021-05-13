@@ -28,6 +28,12 @@ function jump() {
   showCalendar(currentMonth, currentYear);
 }
 
+function jumpToCurrentDay(){
+  currentYear = today.getFullYear();
+  currentMonth = today.getMonth();
+  showCalendar(currentMonth, currentYear);
+}
+
 function showCalendar(month, year) {
 
   let firstDay = (new Date(year, month)).getDay();
