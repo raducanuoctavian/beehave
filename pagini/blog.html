@@ -19,52 +19,41 @@
 
   <body>
   <!-- NavBar-->
-  <div class="navbar navbar-expand-lg fixed-top navbar_style">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <div class="container">
-      <a class="fixed-top on_top"><a href="../index.html"><img src="../logo/bee1.png" alt="Logo BeeHave" width="200" height="200" style="margin-top:0px" /></a></a>
-      <ul class="nav justify-content-center nav_style">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown active nav_text_color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            DESPRE NOI
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="../pagini/echipa.html">Echipa</a></li>
-            <li><a class="dropdown-item" href="../pagini/misiune.html">Misiune</a></li>
-          </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active nav_text_color" aria-current="page" href="proiecte.html">PROIECTE</a>
+          <a class="nav-link" href="#">Link</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link active nav_text_color" aria-current="page" href="implica.html">
-            IMPLICA-TE
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
           </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link active nav_text_color" aria-current="page" href="blog.html">BLOG</a>
+          <a class="nav-link disabled" href="#">Disabled</a>
         </li>
       </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
     </div>
-    <ul class="nav justify-content-end top_buttons">
-      <li class="nav-item">
-        <div class="nav-item">
-          <button type="button" class="btn btn-outline-primary">Doneaza</button>
-        </div>
-      </li>
-      <li class="nav-item">
-        <div class="nav-item">
-          <button class="tranbutton"><a href="https://www.facebook.com/beehave.romania" target="_blank"><img src='../logo/fb.png' alt='facebook' width="17" height="34" /></a></button>
-        </div>
-      </li>
-      <li class="nav-item">
-        <div class="nav-item">
-          <button class="tranbutton"><a href="https://www.instagram.com/beehave_romania/" target="_blank"><img src='../logo/ig.png' alt='instagram' width="34" height="34" /></a></button>
-        </div>
-      </li>
-
-    </ul>
-  </div>
+  </nav>
 
 
 
