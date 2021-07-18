@@ -17,19 +17,13 @@
 
 <body>
   <!-- NavBar-->
-  <div class="navbar navbar-expand-lg fixed-top navbar_style">
-
+  <section class="navbar navbar-expand-lg fixed-top navbar_style" id="navigation">
     <div class="container">
       <a class="fixed-top on_top"><a href="../index.html"><img src="../logo/bee1.png" alt="Logo BeeHave" width="200" height="200" style="margin-top:0px" /></a></a>
       <ul class="nav justify-content-center nav_style">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown active nav_text_color" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            DESPRE NOI
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="../pagini/echipa.html">Echipa</a></li>
-            <li><a class="dropdown-item" href="../pagini/misiune.html">Misiune</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link active nav_text_color" aria-current="page" href="echipa.html">DESPRE NOI</a>
+        </li>
         </li>
         <li class="nav-item">
           <a class="nav-link active nav_text_color" aria-current="page" href="proiecte.html">PROIECTE</a>
@@ -62,7 +56,7 @@
       </li>
 
     </ul>
-  </div>
+  </section>
 
 
   <!--Echipa BEEHAVE -->
@@ -73,14 +67,10 @@
     <div class="container-fluid container_fluid_style">
       <!-- Antonia -->
       <div class="row">
-        <div class="col col-lg-2">
+        <div class="col col-lg-2" style="width:350px">
           <img src="../poze/asdf.jpg" class="imgteam"/>
-          <p class="h3 h3_style">
-            Maria-Antonia
-          </p>
         </div>
-
-        <div class="col align-self-center align-items-center text_center">
+        <div class="col align-self-center align-items-center text_center" style="margin-right:50px">
           <p class="h5 h5_style">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus porta placerat. Vestibulum tempus nisi a fermentum ultricies. Suspendisse condimentum tempor dolor a scelerisque. Aliquam posuere faucibus pellentesque. Mauris lobortis,
             sem quis mattis consectetur, dui odio sodales nulla, euismod tempor tellus mi sit amet magna. Maecenas ante leo, lobortis ac laoreet quis, egestas non odio. Fusce ornare elit et nunc dignissim commodo. Praesent viverra nec libero sed
@@ -88,6 +78,19 @@
             "</p>
 
         </div>
+        <div class="row">
+          <div class="col col-lg-2 text_center" style="width:350px">
+          <p class="h3 h3_style">
+            Maria - Antonia
+          </p>
+        </div>
+        <div class="col col-lg-2">
+        </div>
+        </div>
+
+
+
+
       </div>
       <div class="borderarticles">
 
@@ -96,7 +99,7 @@
       <!-- Andreea -->
       <div class="row">
         <div class="col align-self-center align-items-center text_center">
-          <p class="h5 h5_style">
+          <p class="h5 h5_style" style="margin-left:50px">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam justo, efficitur sit amet ultrices a, sagittis et ipsum. Nullam auctor molestie est. Nunc ornare mauris eu ligula fringilla suscipit. Etiam interdum diam eros, id
             tristique ex sagittis at. Curabitur gravida sed tortor id viverra. Quisque lobortis scelerisque felis at suscipit. Phasellus nec libero tristique, finibus lectus ut, tempor diam. Quisque sit amet enim at ex venenatis porttitor.
 
@@ -111,11 +114,17 @@
             odio sapien, tincidunt sed interdum ac, scelerisque a eros. Phasellus nec."
           </p>
         </div>
-        <div class="col col-lg-2">
+        <div class="col col-lg-2" style="width:350px">
           <img src="../poze/Antonia.jpg" class="imgteam" />
-          <p class="h3 h3_style">
-            Andreea
-          </p>
+          <div class="row">
+            <div class="col col-lg-2 text_center" style="width:350px">
+            <p class="h3 h3_style">
+              Maria - Antonia
+            </p>
+          </div>
+          <div class="col col-lg-2">
+          </div>
+          </div>
         </div>
       </div>
       <div class="borderarticles">
@@ -124,39 +133,38 @@
 
       <!-- Membru3 -->
       <div class="row">
-        <div class="col col-lg-2">
-
-          <img src="../poze/Antonia.jpg" class="imgteam" />
-          <p class="h3 h3_style">
-            Membru3
-          </p>
+        <div class="col col-lg-2" style="width:350px">
+          <img src="../poze/asdf.jpg" class="imgteam"/>
         </div>
-
-        <div class="col align-self-center align-items-center text_center">
+        <div class="col align-self-center align-items-center text_center" style="margin-right:50px">
           <p class="h5 h5_style">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam justo, efficitur sit amet ultrices a, sagittis et ipsum. Nullam auctor molestie est. Nunc ornare mauris eu ligula fringilla suscipit. Etiam interdum diam eros, id
-            tristique ex sagittis at. Curabitur gravida sed tortor id viverra. Quisque lobortis scelerisque felis at suscipit. Phasellus nec libero tristique, finibus lectus ut, tempor diam. Quisque sit amet enim at ex venenatis porttitor.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus porta placerat. Vestibulum tempus nisi a fermentum ultricies. Suspendisse condimentum tempor dolor a scelerisque. Aliquam posuere faucibus pellentesque. Mauris lobortis,
+            sem quis mattis consectetur, dui odio sodales nulla, euismod tempor tellus mi sit amet magna. Maecenas ante leo, lobortis ac laoreet quis, egestas non odio. Fusce ornare elit et nunc dignissim commodo. Praesent viverra nec libero sed
+            cursus. Nulla malesuada libero interdum ex vehicula, sit amet euismod mi varius. Nulla."
+            "</p>
 
-            Mauris a nunc et nulla euismod tincidunt. Proin dictum, sapien a mattis vulputate, justo orci auctor libero, quis aliquet tortor orci et augue. Integer hendrerit imperdiet ullamcorper. Vivamus ac arcu pharetra, rutrum massa facilisis,
-            molestie tellus. Fusce at nulla et nisl ultrices hendrerit quis ac nisi. Quisque blandit dui commodo ex tristique gravida. Suspendisse laoreet nisi sit amet purus rhoncus, a porttitor ex blandit. Nulla fringilla arcu in ante tempus, et
-            pulvinar nisi placerat. Aenean porttitor tincidunt justo sed vulputate. Nulla scelerisque blandit justo vel euismod. Sed vitae aliquet velit, in tincidunt nisl. Nam id dolor aliquet, bibendum massa ac, tempus nisi. Duis non est ut nisi
-            commodo cursus. Nam consequat dapibus eleifend.
-
-            Quisque sit amet mi rutrum justo tincidunt fringilla sit amet id massa. Cras sit amet mattis purus. Sed ut dui accumsan, rutrum metus eu, finibus dolor. Nullam consectetur lectus metus, ac tempus lorem placerat eget. Aliquam at risus
-            varius, sodales urna et, ultrices diam. In eget tincidunt augue. Integer nec metus ut enim mattis fringilla. Nunc bibendum mollis sem, ac feugiat lorem molestie id. Sed venenatis hendrerit erat ut rutrum. Praesent nec facilisis ante.
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur nunc purus, hendrerit non lectus ac, fermentum vestibulum urna. Nullam velit quam, iaculis eu mollis sed, vestibulum eget odio. Curabitur
-            odio sapien, tincidunt sed interdum ac, scelerisque a eros. Phasellus nec."
+        </div>
+        <div class="row">
+          <div class="col col-lg-2 text_center" style="width:350px">
+          <p class="h3 h3_style">
+            Maria - Antonia
           </p>
         </div>
+        <div class="col col-lg-2">
+        </div>
+        </div>
+
+
+
+
       </div>
       <div class="borderarticles">
+
       </div>
-
-
       <!-- Membru4 -->
       <div class="row">
-        <div class="col align-self-start align-items-start text_center">
-          <p class="h5 h5_style">
+        <div class="col align-self-center align-items-center text_center">
+          <p class="h5 h5_style" style="margin-left:50px">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam justo, efficitur sit amet ultrices a, sagittis et ipsum. Nullam auctor molestie est. Nunc ornare mauris eu ligula fringilla suscipit. Etiam interdum diam eros, id
             tristique ex sagittis at. Curabitur gravida sed tortor id viverra. Quisque lobortis scelerisque felis at suscipit. Phasellus nec libero tristique, finibus lectus ut, tempor diam. Quisque sit amet enim at ex venenatis porttitor.
 
@@ -171,16 +179,21 @@
             odio sapien, tincidunt sed interdum ac, scelerisque a eros. Phasellus nec."
           </p>
         </div>
-        <div class="col col-lg-2">
+        <div class="col col-lg-2" style="width:350px">
           <img src="../poze/Antonia.jpg" class="imgteam" />
-          <p class="h3 ">
-            Membru4
-          </p>
+          <div class="row">
+            <div class="col col-lg-2 text_center" style="width:350px">
+            <p class="h3 h3_style">
+              Maria - Antonia
+            </p>
+          </div>
+          <div class="col col-lg-2">
+          </div>
+          </div>
         </div>
       </div>
       <div class="borderarticles">
       </div>
-
 
 
 
@@ -260,15 +273,12 @@
 
 
   <!-- Optional JavaScript; choose one of the two! -->
-
+  <script src="../JS/navbar.js" charset="utf-8"></script>
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
-  <!-- Option 2: Separate Popper and Bootstrap JS -->
-  <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
+  <!-- Option 2: Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 
 </html>

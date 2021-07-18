@@ -56,7 +56,9 @@ table{
 
 
 /* NavBar style */
-
+.section_black{
+  background-color: black;
+}
 .on_top{
   z-index:-2;
 }
@@ -74,11 +76,12 @@ table{
   margin-bottom:125px;
 }
 .navbar_style{
-  background:black;
   height:200px;
   transition: background 0.5s;
+  background-color: black;
   /*border-bottom: none;*/
 }
+
 
 /*------------------------------------------------------ index.html body -------------------------------------------------*/
 
@@ -88,7 +91,7 @@ margin-left:5%;
 margin-right:5%;
 }
 .h1_style{
-  color:white;
+  color:black;
   font-family: 'Roboto', sans-serif;
   font-weight:bold;
 }
@@ -96,6 +99,7 @@ margin-right:5%;
 /*countdown section */
 .width_100{
   width:100%;
+
 }
 .text_style{
   color:white;
@@ -103,7 +107,7 @@ margin-right:5%;
 }
 .countdown_style{
   border: none;
-  height:300px;
+  height:500px;
   width:100%;
   padding:80px;
 }
@@ -111,7 +115,7 @@ margin-right:5%;
 .p_style{
   width:33%;
   font-family: 'Roboto', sans-serif;
-  color:white;
+  color:black;
   font-weight:bold;
 }
 
@@ -161,13 +165,18 @@ margin-right:5%;
 }
 .imgteam{
   border-radius:50%;
-  width:750px;
-  height:750px;
+  width:250px;
+  height:250px;
   margin-left: 10%;
   margin-top:10px;
+  margin-right:10%;
   border:2px solid white;
 }
+.scrollColor{
+  color:black;
+}
 /*Footer section */
+
 
 
 
