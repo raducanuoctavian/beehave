@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+  {% block content %}
+{% if category_posts %}
+<h1>{{ cats }}</h1>
+<br>
+{% for post in category_posts %}
+<a class="card bg-dark text-white image-class" href="{% url 'article-detail' post.pk %}" style="width:100%">
+  {% if post.header_image %}
+  <img class="card-img image-blur" src="{{ post.header_image.url }}" alt="Card image"
+        width="200px" height="200px" style="object-fit: none; object-position: 50% 50%">
+  {% endif %}
+  <div class="card-img-overlay">
+    <h2 class="card-title font-weight-bold">{{ post.title|title }} </h2>
+    <p class="card-text hidden focus-in-expand-fwd">{{ post.snippet|safe}}</p>
+    <p class="card-text hidden focus-in-expand-fwd">{{ post.author.first_name }} - {{ post.author.last_name }} - {{post.post_date}} </p>
+  </div>
+</a>
+  <br />  <hr> <br />
+{% endfor %}
+
+{% else %}
+<h2> Sorry this page does not exist... </h2>
+{% endif %}
+
+
+  {% endblock %}
+
+
+

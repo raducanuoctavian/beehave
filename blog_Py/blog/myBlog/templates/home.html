@@ -1,13 +1,50 @@
 {% extends 'base.html' %}
 
   {% block content %}
+{% load static %}
+<h1 class="display-4">Blog Posts</h1>
+<br>
 
-<h1>Post</h1>
-<ul>
-{% for post in object_list %}
-    <li><a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a> - {{ post.author.first_name }}
-        {{ post.author.last_name }}<br />
-        {{ post.body }}</li>
-{% endfor%}
-    </ul>
+{% for post in object_list%}
+
+
+<a class="card bg-dark text-white image-class" href="{% url 'article-detail' post.pk %}" style="width:100%">
+  {% if post.header_image %}
+  <img class="card-img image-blur" src="{{ post.header_image.url }}" alt="Card image"
+        width="200px" height="200px" style="object-fit: none; object-position: 50% 50%">
+  {% endif %}
+  <div class="card-img-overlay">
+    <h2 class="card-title font-weight-bold">{{ post.title|title }} </h2>
+    <p class="card-text hidden focus-in-expand-fwd">{{ post.snippet|safe}}</p>
+    <p class="card-text hidden focus-in-expand-fwd">{{ post.author.first_name }} - {{ post.author.last_name }} - {{post.post_date}} </p>
+  </div>
+</a>
+  <br />  <hr> <br />
+
+
+<!--    <li>-->
+<!--    <a href="{% url 'article-detail' post.pk %}">{{ post.title }}</a>-->
+<!--        - {{ post.author.first_name }}-->
+<!--        {{ post.author.last_name }}-->
+<!--        - {{post.post_date}} - -->
+<!--        <i><small><a href="{% url 'category' post.category|slugify %}">{{post.category}}</a></small></i>-->
+<!--        {% if user.is_authenticated %}-->
+<!--        {% if user.id == post.author.id %}-->
+<!--            <small>-->
+<!--                <a href="{% url 'update_post' post.pk %}">- Edit -</a>-->
+<!--                <a href="{% url 'delete_post' post.pk %}">- Delete -</a>-->
+<!--            </small>-->
+<!--        {% endif %}-->
+<!--        {% endif %}-->
+
+<!--        {{ post.snippet|safe}}...-->
+
+
+
+{% endfor %}
+
+
   {% endblock %}
+
+
+
